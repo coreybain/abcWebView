@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		8348F65E21F72A99000D9CE2 /* ABCWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8348F65C21F72A99000D9CE2 /* ABCWebView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8348F66521F72AAE000D9CE2 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8348F66421F72AAE000D9CE2 /* WebViewController.swift */; };
+		8348F66721F72AC4000D9CE2 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8348F66621F72AC4000D9CE2 /* WebView.swift */; };
+		8348F66921F72AD4000D9CE2 /* assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8348F66821F72AD4000D9CE2 /* assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8348F65921F72A99000D9CE2 /* ABCWebView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ABCWebView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8348F65C21F72A99000D9CE2 /* ABCWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABCWebView.h; sourceTree = "<group>"; };
 		8348F65D21F72A99000D9CE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8348F66421F72AAE000D9CE2 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		8348F66621F72AC4000D9CE2 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		8348F66821F72AD4000D9CE2 /* assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +54,9 @@
 			children = (
 				8348F65C21F72A99000D9CE2 /* ABCWebView.h */,
 				8348F65D21F72A99000D9CE2 /* Info.plist */,
+				8348F66421F72AAE000D9CE2 /* WebViewController.swift */,
+				8348F66621F72AC4000D9CE2 /* WebView.swift */,
+				8348F66821F72AD4000D9CE2 /* assets.xcassets */,
 			);
 			path = ABCWebView;
 			sourceTree = "<group>";
@@ -95,6 +104,7 @@
 				TargetAttributes = {
 					8348F65821F72A99000D9CE2 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -120,6 +130,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8348F66921F72AD4000D9CE2 /* assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8348F66521F72AAE000D9CE2 /* WebViewController.swift in Sources */,
+				8348F66721F72AC4000D9CE2 /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +274,7 @@
 		8348F66221F72A99000D9CE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -278,6 +292,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.spiritdevs.ABCWebView;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +301,7 @@
 		8348F66321F72A99000D9CE2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
